@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Estacionamento</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<img src="Imagens/icon.png" id="icone">
+	<h1>Parking Zone</h1>
+	<div class="container">
+		<section class="secao-botoes">
+			<button class="botoes" onclick="abrirPopUp(0)">Estacionar</button>
+			<div class="popup" id="popup">
+				<h2>Nome do proprietário:</h2>
+				<input id="nome" type="text" placeholder="nome do proprietário">
+				<h2>Hora de entrada:</h2>
+				<input id="hora_entrada" type="text" placeholder="hora de entrada">
+				<h2>Marca do veículo:</h2>
+				<input id="marca" type="text" placeholder="marca do veículo">
+				<h2>Placa:</h2>
+				<input id="placa" type="text" placeholder="placa">
+				<h2>Cor:</h2>
+				<input id="cor" type="text" placeholder="cor">
+				<h2>Carro ou moto? (C/M)</h2>
+				<input id="tipo" type="text" placeholder="carro ou moto?">
+				<button type="button" onclick="fecharPopUp(0)">OK</button>
+			</div>
+			<button class="botoes" onclick="abrirPopUp(1)">Liberar</button>
+			<div class="popup" id="popup1">
+				<h2>Digite o id do veículo:</h2>
+				<input id="id" type="text" placeholder="id do veículo">
+				<h2>Digite o tipo do veículo (C/M):</h2>
+				<input id="type" type="text" placeholder="tipo do veículo">
+				<h2>Digite a hora de saída:</h2>
+				<input id="hora_saida" type="text" placeholder="hora de saída">
+				<button type="button" onclick="fecharPopUp(1)">OK</button>
+			</div>
+			<button class="botoes" onclick="abrirPopUp(2)">Relatório</button>
+			<div class="popup" id="popup2">
+				<h2>Digite o id do veículo:</h2>
+				<input id="id_rel" type="text" placeholder="id do veículo">
+				<button type="button" onclick="fecharPopUp(2)">OK</button>
+			</div>
+			<button class="botoes" onclick="abrirPopUp(3)">Saldo</button>
+			<div class="popup" id="popup3">
+				<h2>Saldo:</h2>
+				<button type="button" onclick="fecharPopUp(3)">OK</button>
+			</div>
+		</section>
+	</div>
+
+	<footer class="footer">
+		Desenvolvido por Gabriel Alves
+	</footer>
+
+	<script src="veiculo.js"></script>
+	<script src="carro.js"></script>
+	<script src="moto.js"></script>
+	<script src="estacionamento.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
